@@ -8,7 +8,7 @@
                     <!-- card header -->
                     <div class="px-9 pt-5 flex justify-end items-stretch flex-wrap min-h-[70px] pb-0 bg-transparent">
                         <div class="relative flex flex-wrap items-center my-2">
-                            <a href="{{ asset('new_product')  }}" class="bg-blue-800 w-48 h-10 rounded text-white font-bold flex items-center justify-center"> ajouter un nouve produit </a>
+                            <a href="{{ route('new_product')  }}" class="bg-blue-800 w-48 h-10 rounded text-white font-bold flex items-center justify-center"> ajouter un nouve produit </a>
                         </div>
                     </div>
                     <!-- end card header -->
