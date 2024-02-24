@@ -10,6 +10,7 @@
                         <div class="relative flex flex-wrap items-center my-2">
                             <a href="{{ route('new_product')  }}" class="bg-blue-800 w-48 h-10 rounded text-white font-bold flex items-center justify-center"> ajouter un nouve produit </a>
                         </div>
+
                     </div>
                     <!-- end card header -->
                     <!-- card body  -->
@@ -18,11 +19,11 @@
                             <table class="w-full my-0 align-middle text-dark border-neutral-200">
                                 <thead class="align-bottom">
                                 <tr class="font-semibold text-[0.95rem] text-secondary-dark">
-                                    <th class="pb-3 text-end min-w-[100px]">NAME</th>
-                                    <th class="pb-3 text-end min-w-[175px]">DESCRIPTION</th>
-                                    <th class="pb-3 pr-12 text-end min-w-[50px]">STATUS</th>
-                                    <th class="pb-3 text-end min-w-[50px]">PRIX</th>
-                                    <th class="pb-3 text-end min-w-[50px]">ACTIONS</th>
+                                    <th class="pb-3 text-end min-w-[100px]">Nom de produit</th>
+                                    <th class="pb-3 text-end min-w-[175px]">Description de produit</th>
+                                    <th class="pb-3 pr-12 text-end min-w-[50px]">publier</th>
+                                    <th class="pb-3 text-end min-w-[50px]">Prix</th>
+                                    <th class="pb-3 text-end min-w-[50px]">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -45,13 +46,7 @@
                                             <span class="font-semibold text-light-inverse text-md/normal">{{ $produt->prix }}</span>
                                         </td>
                                         <td class="p-3 pr-0 text-end">
-                                            <button class="ml-auto relative text-secondary-dark bg-light-dark hover:text-primary flex items-center h-[25px] w-[25px] text-base font-medium leading-normal text-center align-middle cursor-pointer rounded-2xl transition-colors duration-200 ease-in-out shadow-none border-0 justify-center">
-                      <span class="flex items-center justify-center p-0 m-0 leading-none shrink-0 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                      </span>
-                                            </button>
+                                            <a href="#" class="red-500">supprimer</a>
                                         </td>
                                     </tr>
                                 @endforeach
